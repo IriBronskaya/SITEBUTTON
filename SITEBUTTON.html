@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang=ru>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>Вебинар</title>
+    <link rel="stylesheet" type="text/css"href="style.css">  
+    <!--Вебинар по кнопкам HTML-->
+
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+            <h1>Основные виды кнопок</h1>
+                <h2 class="Вебинар">"Элементы интерфейса на основе HTML"</h2>
+                <!--Элементы <input type="button"> не имеют поведения по умолчанию (их двоюродные братья, <input type="submit"> и <input type="reset"> используются для отправки и сброса форм соответственно). Чтобы кнопки делали что-либо, вы должны написать код JavaScript для выполнения работы.-->
+                <input type="button" width="30px" height="20px" value="Нажми на меня">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="forms">Заявка на тех. осмотр</h2>
+            <form>
+                <fieldset>
+                    <legend>Опиши свой автомобиль</legend>
+                        Марка автомобиля<input type="text" name="tredemark" placeholder="Введите марку авто"></input>
+                    
+                        <br>
+                        <br>
+                        <br>
+                            Модель<input type="text" name="model" placeholder="Введите модель" required="required"></input>
+                        <br>
+                        <br>
+                            <input type="submit"></input>
+                            <p>Коробка передачь</p>
+                            АКП<input type="radio" name="gear" value="auto" checked>
+                            МКП<input type="radio" name="gear" value="hand">
+                            <br>
+                            <br>
+                            Необходимо проверить
+                            <br>
+                            <br>
+                            <input type="checkbox" name="type1" value="brake">Тормозная жидкость<br>
+                            <input type="checkbox" name="type2" value="parall">Сход<br>
+                            <input type="checkbox" name="type3" value="gio">Охлаждающая жидкость<br>
+                            <input type="checkbox" name="type4" value="liv">Подвеска<br>
+                            <input type="checkbox" name="type5" value="oil">Масло в двигателе<br>
+                            <br>
+                            <br>
+                            Какое масло заливать<br>
+                        
+                            <select name="oillist">
+                                <option label=""></option>
+                                <option label="Motli">Motli</option>
+                                <option label="Shell">Shell</option>
+                                <option label="Gastrol">Gastrol</option>
+                                <option label="Jlk" disabled>Jlk</option>
+                            </select>
+                            <br>
+                            Цвет подкраски супортов <br>
+                            <input type="color" list="colorlist" value="#cc0000">
+                            <datalist id="colorlist">
+                                <option value="#ff000" label="red"></option>
+                                <option value="#08000" label="green"></option>
+                                <option value="#06895" label="grey"></option>
+                                <option value="#43799" label="black"></option>
+                                
+
+                            </datalist>
+                            <br>
+                            <br>
+                            Дата визита<br>
+                            <input type="date" name="visit" value="2023-03-11" min="2023-03-10" max="2023-04-20" >
+                            <br>
+                            <br>
+                            ПОЧТА
+                            <br>
+                            <input type="email" name="mail">
+                            <br>
+                            <br>
+                            Телефон
+                            <br>
+                            <input type="tel" name="phone">
+                            <br>
+                            <input type="submit" name="submit">
+                            <br>
+                            <br>
+                            <input type="reset" name="reset">
+                            
+                </fieldset>
+                <p>Прогресс тех. осмотра</p>
+                <progress value="25" max="100"></progress>
+                <fieldset>
+                    <legend>Обратная связь</legend><br> 
+                    Оцените качество услуг<br>
+                    <input type="range" min="10" step="1" value="7"><br><br>
+                    Что б хотелось улучшить?<br>
+                    <textarea name="comment" id="" cols="30" rows="7" placeholder="Ваши предложения"></textarea>
+                    <br>
+                    Порекоммендуушь наш сервис?
+                    <label for="yes">Да</label>
+                    <input type="radio" id="yes" name="choise" value="yes" checked>
+                    <label for="no">Нет</label>
+                    <input type="radio" id="no" name="choise" value="no" checked>
+                    <label for="no">Незнаю</label>
+                    <input type="radio" id="Don't know" name="choise" value="Don't know" checked>
+
+                </fieldset>
+                
+            <li style="list-style-type: disc;">Пришел</li>
+            <li style="margin: 1ch;">Увидел</li>
+            <li>Победил</li>
+        </ol>
+        <br>
+        <br>
+        <ul style="color: blueviolet;">
+            <li>Раз</li>
+            <li>Два</li>
+            <li>Три</li>
+            <li>Четыре</li>
+        </ul>
+        <br>
+        <br>
+            
+        </div>
+    </main>
+    
+  </body>
+</html>
